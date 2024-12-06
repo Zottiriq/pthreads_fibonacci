@@ -27,10 +27,13 @@ void *fonksiyon(void *in) {
 }
 
 int main(int argc, char *argv[]) {
+// for hesaplaması için değişken
     int j;
 
 // thread içinde fibonacciyi hesaplayacak değer
     int sayi;
+    
+//threadın özelliklerini tutmak için değişken
     pthread_attr_t özel;
 
 // kullanıcının birden fazla sayı girip girmediğini kontrol eden fonksiyon
@@ -51,7 +54,7 @@ int main(int argc, char *argv[]) {
 //thread özelliklerini başlatan fonksiyon
     pthread_attr_init(&özel);
 
-// 1 den sayac değerine kadar threadlar kullanarak fibonacci hesaplatacak fonksiyon
+// 0 dan sayı değerine kadar threadlar kullanarak fibonacci hesaplatacak fonksiyon
     for (int j = 0; j <= sayi; j++) {
         pthread_t thread;
         pthread_create(&thread, &özel, fonksiyon, (void *)j);
