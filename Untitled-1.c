@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
 // for hesaplaması için değişken
     int j;
 
-// thread içinde fibonacciyi hesaplayacak değer
+// thread içinde hesaplanacak fibonacci aralığını belirleyen değer
     int sayi;
     
 //threadın özelliklerini tutmak için değişken
