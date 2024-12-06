@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
 
 // kullanıcının girdiği sayı birden büyük mü ölçen fonksiyon
     if (sayi < 1) {
-        printf("sayac 1 den büyük olmalidir");
+        printf("sayi 1 den büyük olmalidir");
         return -1;
     }
 
