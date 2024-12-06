@@ -1,3 +1,6 @@
+//AD: MEHMET KEREM
+//SOYAD: İNCİ
+//NO: 230206057
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
